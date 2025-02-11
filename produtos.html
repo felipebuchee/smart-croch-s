@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smart Crochês</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">Smart Crochês<sup></sup></div>
+                <div style="font-size: 10px;">Crochês nada inteligentes<sup></sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="produtos.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Produtos</span></a>
+            </li>
+
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="blank.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Cadastrar produto</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar"
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Pesquisar" aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notificações
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">31/01/2025</div>
+                                        <span class="font-weight-bold">O relatório mensal já pode ser baixado!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">30/01/2025</div>
+                                        Você recebeu um PIX de Jefferson Chaves no valor de R$556,70
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">18/01/2024</div>
+                                        Um novo dispositivo se conectou a sua conta em Francisco Beltrão - PR. Não foi
+                                        você?
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Ver mais</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Mensagens
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Boa tarde, gostaria de comprar uma capa de crochê
+                                            para panela de pressão</div>
+                                        <div class="small text-gray-500">Ana Júlia · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Bom dia, realizei o pagamento via PIX.</div>
+                                        <div class="small text-gray-500">Jefferson Chaves · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Olá, gostaria de uma capa bordada para meu
+                                            massageador</div>
+                                        <div class="small text-gray-500">Elizabete S. · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">VOCÊ ME ROUBOU!! VOU TE HACKEAR SEU DESGRAÇADO!!.
+                                        </div>
+                                        <div class="small text-gray-500">Luigi · 1a</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Ver mais</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">João Leitão</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="perfil.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Sair
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Produtos</h1>
+
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Produtos da Smart Crochês</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Categoria</th>
+                                            <th>Armazém</th>
+                                            <th>Quantidade</th>
+                                            <th>Data de Criação</th>
+                                            <th>Preço</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Categoria</th>
+                                            <th>Armazém</th>
+                                            <th>Quantidade</th>
+                                            <th>Data de Criação</th>
+                                            <th>Preço</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Polvo Amigurumi</td>
+                                            <td>Brinquedo</td>
+                                            <td>Curitiba</td>
+                                            <td>15</td>
+                                            <td>2024/02/05</td>
+                                            <td>R$120,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manta de Quadrados</td>
+                                            <td>Decoração</td>
+                                            <td>São Paulo</td>
+                                            <td>8</td>
+                                            <td>2023/11/18</td>
+                                            <td>R$250,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bolsa Boho</td>
+                                            <td>Acessório</td>
+                                            <td>Florianópolis</td>
+                                            <td>20</td>
+                                            <td>2024/01/22</td>
+                                            <td>R$180,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cachecol Trançado</td>
+                                            <td>Roupas</td>
+                                            <td>Porto Alegre</td>
+                                            <td>12</td>
+                                            <td>2023/12/10</td>
+                                            <td>R$95,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Tapete Mandala</td>
+                                            <td>Decoração</td>
+                                            <td>Rio de Janeiro</td>
+                                            <td>10</td>
+                                            <td>2023/10/22</td>
+                                            <td>R$320,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gorro Invernal</td>
+                                            <td>Roupas</td>
+                                            <td>Curitiba</td>
+                                            <td>25</td>
+                                            <td>2024/01/10</td>
+                                            <td>R$85,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Almofada Flor</td>
+                                            <td>Decoração</td>
+                                            <td>Salvador</td>
+                                            <td>18</td>
+                                            <td>2023/09/30</td>
+                                            <td>R$150,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cesta Organizadora</td>
+                                            <td>Utilidades</td>
+                                            <td>Florianópolis</td>
+                                            <td>30</td>
+                                            <td>2024/02/02</td>
+                                            <td>R$120,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Casaco Artesanal</td>
+                                            <td>Roupas</td>
+                                            <td>São Paulo</td>
+                                            <td>8</td>
+                                            <td>2023/11/15</td>
+                                            <td>R$450,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bolsa Colorida</td>
+                                            <td>Acessório</td>
+                                            <td>Recife</td>
+                                            <td>22</td>
+                                            <td>2024/01/28</td>
+                                            <td>R$180,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boneca Amigurumi</td>
+                                            <td>Brinquedo</td>
+                                            <td>Belo Horizonte</td>
+                                            <td>12</td>
+                                            <td>2023/12/05</td>
+                                            <td>R$230,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caminho de Mesa</td>
+                                            <td>Decoração</td>
+                                            <td>Fortaleza</td>
+                                            <td>16</td>
+                                            <td>2023/08/20</td>
+                                            <td>R$190,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Tapete Redondo Floral</td>
+                                            <td>Decoração</td>
+                                            <td>São Paulo</td>
+                                            <td>14</td>
+                                            <td>2023/07/12</td>
+                                            <td>R$350,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cachecol Listrado</td>
+                                            <td>Roupas</td>
+                                            <td>Curitiba</td>
+                                            <td>20</td>
+                                            <td>2024/01/05</td>
+                                            <td>R$90,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pano de Prato Decorado</td>
+                                            <td>Utilidades</td>
+                                            <td>Fortaleza</td>
+                                            <td>25</td>
+                                            <td>2023/10/22</td>
+                                            <td>R$45,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cobre Leito Artesanal</td>
+                                            <td>Decoração</td>
+                                            <td>Recife</td>
+                                            <td>10</td>
+                                            <td>2023/11/17</td>
+                                            <td>R$480,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bolsa de Praia</td>
+                                            <td>Acessório</td>
+                                            <td>Rio de Janeiro</td>
+                                            <td>15</td>
+                                            <td>2024/02/01</td>
+                                            <td>R$210,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colcha de Crochê</td>
+                                            <td>Decoração</td>
+                                            <td>Salvador</td>
+                                            <td>8</td>
+                                            <td>2023/08/15</td>
+                                            <td>R$750,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chapéu de Crochê</td>
+                                            <td>Acessório</td>
+                                            <td>Florianópolis</td>
+                                            <td>18</td>
+                                            <td>2024/01/10</td>
+                                            <td>R$110,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Toalha de Mesa</td>
+                                            <td>Decoração</td>
+                                            <td>Curitiba</td>
+                                            <td>50</td>
+                                            <td>2022/07/15</td>
+                                            <td>R$ 45,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cachecol de Lã</td>
+                                            <td>Acessórios</td>
+                                            <td>São Paulo</td>
+                                            <td>80</td>
+                                            <td>2023/01/10</td>
+                                            <td>R$ 35,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tapete Redondo</td>
+                                            <td>Decoração</td>
+                                            <td>Rio de Janeiro</td>
+                                            <td>30</td>
+                                            <td>2021/11/22</td>
+                                            <td>R$ 120,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Almofada Colorida</td>
+                                            <td>Decoração</td>
+                                            <td>Belo Horizonte</td>
+                                            <td>20</td>
+                                            <td>2023/02/05</td>
+                                            <td>R$ 60,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bolsa de Crochê</td>
+                                            <td>Acessórios</td>
+                                            <td>Porto Alegre</td>
+                                            <td>25</td>
+                                            <td>2022/12/01</td>
+                                            <td>R$ 85,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chapéu de Praia</td>
+                                            <td>Acessórios</td>
+                                            <td>Fortaleza</td>
+                                            <td>15</td>
+                                            <td>2023/03/20</td>
+                                            <td>R$ 75,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coletor de Pó de Crochê</td>
+                                            <td>Utilidades</td>
+                                            <td>Salvador</td>
+                                            <td>100</td>
+                                            <td>2022/06/13</td>
+                                            <td>R$ 25,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jogos de Cama</td>
+                                            <td>Decoração</td>
+                                            <td>São Paulo</td>
+                                            <td>10</td>
+                                            <td>2021/05/08</td>
+                                            <td>R$ 180,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chaveiro de Flores</td>
+                                            <td>Acessórios</td>
+                                            <td>Curitiba</td>
+                                            <td>200</td>
+                                            <td>2022/10/15</td>
+                                            <td>R$ 15,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boneca de Crochê</td>
+                                            <td>Brinquedos</td>
+                                            <td>Rio de Janeiro</td>
+                                            <td>50</td>
+                                            <td>2022/09/02</td>
+                                            <td>R$ 45,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Botinha de Bebê</td>
+                                            <td>Moda Infantil</td>
+                                            <td>Salvador</td>
+                                            <td>70</td>
+                                            <td>2023/01/18</td>
+                                            <td>R$ 40,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colar de Pérolas</td>
+                                            <td>Acessórios</td>
+                                            <td>Belo Horizonte</td>
+                                            <td>40</td>
+                                            <td>2022/11/05</td>
+                                            <td>R$ 50,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vasinhos de Crochê</td>
+                                            <td>Decoração</td>
+                                            <td>Porto Alegre</td>
+                                            <td>60</td>
+                                            <td>2023/04/10</td>
+                                            <td>R$ 20,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Porta-copos</td>
+                                            <td>Utilidades</td>
+                                            <td>Curitiba</td>
+                                            <td>150</td>
+                                            <td>2023/02/19</td>
+                                            <td>R$ 12,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cachecol Infantil</td>
+                                            <td>Acessórios</td>
+                                            <td>Rio de Janeiro</td>
+                                            <td>90</td>
+                                            <td>2021/12/01</td>
+                                            <td>R$ 25,00</td>
+                                        </tr>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Smart Crochês 2025</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Você realmente deseja sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Clique em 'Sair' se você estiver pronto para isso.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
